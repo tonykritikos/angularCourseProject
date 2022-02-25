@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\.angular",
+    "\\node_modules\\bootstrap",
+    "\\node_modules\\bootstrap\\dist",
+    "\\node_modules\\bootstrap\\dist\\css",
+    "\\src",
+    "\\src\\app",
+    "\\src\\assets",
+    "\\src\\environments"
+  ],
+  "SelectedNode": "\\src\\app\\app.component.html",
+  "PreviewInSolutionExplorer": false
+}
