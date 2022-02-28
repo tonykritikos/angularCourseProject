@@ -1,15 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.angular",
-    "\\node_modules\\bootstrap",
-    "\\node_modules\\bootstrap\\dist",
-    "\\node_modules\\bootstrap\\dist\\css",
     "\\src",
     "\\src\\app",
-    "\\src\\assets",
+    "\\src\\app\\header",
+    "\\src\\app\\recipes",
+    "\\src\\app\\recipes\\recipe-detail",
+    "\\src\\app\\shared",
+    "\\src\\app\\shopping-list",
+    "\\src\\app\\shopping-list\\shopping-edit",
     "\\src\\environments"
   ],
-  "SelectedNode": "\\src\\app\\app.component.html",
+  "SelectedNode": "\\src\\app\\shared\\ingredient.model.ts",
   "PreviewInSolutionExplorer": false
 }
