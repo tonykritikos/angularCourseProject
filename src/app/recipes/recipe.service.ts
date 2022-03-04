@@ -10,26 +10,33 @@ export class RecipeService {
   recipesChanged = new Subject<Recipe[]>();;
 
   
-  private recipes: Recipe[] = [
-    new Recipe(
-      'A test Recipe',
-      'This is simply a test',
-      'https://img.delicious.com.au/5aLcV7cG/del/2021/05/slow-roasted-butter-eggplant-curry-152139-2.jpg',
-      [
-        new Ingredient('Meat', 1),
-        new Ingredient('French Fries', 20)
-    ]),
-    new Recipe(
-      'Another test Recipe',
-      'This is simply a test',
-      'https://img.delicious.com.au/5aLcV7cG/del/2021/05/slow-roasted-butter-eggplant-curry-152139-2.jpg',
-      [
-        new Ingredient('Buns', 2),
-        new Ingredient('Meat', 1)])
-  ];
+  //private recipes: Recipe[] = [
+  //  new Recipe(
+  //    'A test Recipe',
+  //    'This is simply a test',
+  //    'https://img.delicious.com.au/5aLcV7cG/del/2021/05/slow-roasted-butter-eggplant-curry-152139-2.jpg',
+  //    [
+  //      new Ingredient('Meat', 1),
+  //      new Ingredient('French Fries', 20)
+  //  ]),
+  //  new Recipe(
+  //    'Another test Recipe',
+  //    'This is simply a test',
+  //    'https://img.delicious.com.au/5aLcV7cG/del/2021/05/slow-roasted-butter-eggplant-curry-152139-2.jpg',
+  //    [
+  //      new Ingredient('Buns', 2),
+  //      new Ingredient('Meat', 1)])
+  //];
+
+  private recipes: Recipe[] = [];
 
   constructor(private slService: ShoppingListService) {
 
+  }
+
+  setRecipes(recipes: Recipe[]) {
+    this.recipes = recipes;
+    this.recipesChanged.next(this.recipes.slice());
   }
 
 
